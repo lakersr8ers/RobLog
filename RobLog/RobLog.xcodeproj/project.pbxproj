@@ -21,6 +21,10 @@
 		6C714EA518A6953B0023EF09 /* RobLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714EA418A6953B0023EF09 /* RobLogTests.m */; };
 		6C714EB018A695FA0023EF09 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714EAE18A695FA0023EF09 /* FacebookSDK.framework */; };
 		6C714EB118A695FA0023EF09 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714EAF18A695FA0023EF09 /* Parse.framework */; };
+		6C714EB918A69ACA0023EF09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714EB718A69ACA0023EF09 /* LoginViewController.m */; };
+		6C714EBA18A69ACA0023EF09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C714EB818A69ACA0023EF09 /* LoginViewController.xib */; };
+		6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */; };
+		6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,12 @@
 		6C714EA418A6953B0023EF09 /* RobLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobLogTests.m; sourceTree = "<group>"; };
 		6C714EAE18A695FA0023EF09 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
 		6C714EAF18A695FA0023EF09 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		6C714EB618A69ACA0023EF09 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6C714EB718A69ACA0023EF09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6C714EB818A69ACA0023EF09 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6C714EBB18A69ADF0023EF09 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +190,12 @@
 		6C714EB518A696FC0023EF09 /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6C714EB618A69ACA0023EF09 /* LoginViewController.h */,
+				6C714EB718A69ACA0023EF09 /* LoginViewController.m */,
+				6C714EB818A69ACA0023EF09 /* LoginViewController.xib */,
+				6C714EBB18A69ADF0023EF09 /* HomeScreenViewController.h */,
+				6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */,
+				6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -260,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C714E8A18A6953B0023EF09 /* InfoPlist.strings in Resources */,
+				6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */,
 				6C714E9218A6953B0023EF09 /* Images.xcassets in Resources */,
+				6C714EBA18A69ACA0023EF09 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C714E9018A6953B0023EF09 /* AppDelegate.m in Sources */,
+				6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */,
 				6C714E8C18A6953B0023EF09 /* main.m in Sources */,
+				6C714EB918A69ACA0023EF09 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +429,7 @@
 				GCC_PREFIX_HEADER = "RobLog/RobLog-Prefix.pch";
 				INFOPLIST_FILE = "RobLog/RobLog-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B2C4DE25-7664-4336-8FD6-8314FE2442D1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -426,6 +447,7 @@
 				GCC_PREFIX_HEADER = "RobLog/RobLog-Prefix.pch";
 				INFOPLIST_FILE = "RobLog/RobLog-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B2C4DE25-7664-4336-8FD6-8314FE2442D1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
