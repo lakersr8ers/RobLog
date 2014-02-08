@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
 
 @interface LoginViewController : UIViewController
+{
+    
+}
+
+- (IBAction)loginButtonTouchHandler:(id)sender;
 
 @end

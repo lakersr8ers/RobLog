@@ -7,13 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    // Parse credentials
+    [Parse setApplicationId:@"8rFKlXvD0rWdXr6OivXulqnXxPSWFh8J9NDpKxbk"
+                  clientKey:@"nrtOrauMeUTYrKlbzCGExsrDl18ZymMPuavfZKFV"];
+    
+    // Your Facebook application id is configured in Info.plist.
+    [PFFacebookUtils initializeFacebook];
     
     self.homeScreenViewController = [[HomeScreenViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.homeScreenViewController];
@@ -22,6 +29,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+// ****************************************************************************
+// App switching methods to support Facebook Single Sign-On.
+// ****************************************************************************
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

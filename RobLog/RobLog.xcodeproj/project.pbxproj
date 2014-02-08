@@ -25,6 +25,14 @@
 		6C714EBA18A69ACA0023EF09 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C714EB818A69ACA0023EF09 /* LoginViewController.xib */; };
 		6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */; };
 		6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */; };
+		6C714EC318A6A65D0023EF09 /* login-button-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C714EC218A6A65D0023EF09 /* login-button-small.png */; };
+		6C714EC518A6A87E0023EF09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714EC418A6A87E0023EF09 /* CoreLocation.framework */; };
+		6C714EC718A6A8870023EF09 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714EC618A6A8860023EF09 /* MapKit.framework */; };
+		6C714EC918A6A8940023EF09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714EC818A6A8940023EF09 /* Accelerate.framework */; };
+		6C714ECB18A6A8D10023EF09 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECA18A6A8D10023EF09 /* CFNetwork.framework */; };
+		6C714ECD18A6A8F80023EF09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECC18A6A8F80023EF09 /* MobileCoreServices.framework */; };
+		6C714ECF18A6A90A0023EF09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECE18A6A90A0023EF09 /* Security.framework */; };
+		6C714ED118A6A93F0023EF09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,14 @@
 		6C714EBB18A69ADF0023EF09 /* HomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
 		6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
 		6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
+		6C714EC218A6A65D0023EF09 /* login-button-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button-small.png"; sourceTree = "<group>"; };
+		6C714EC418A6A87E0023EF09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6C714EC618A6A8860023EF09 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6C714EC818A6A8940023EF09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6C714ECA18A6A8D10023EF09 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6C714ECC18A6A8F80023EF09 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6C714ECE18A6A90A0023EF09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +85,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C714ED118A6A93F0023EF09 /* SystemConfiguration.framework in Frameworks */,
+				6C714ECF18A6A90A0023EF09 /* Security.framework in Frameworks */,
+				6C714ECD18A6A8F80023EF09 /* MobileCoreServices.framework in Frameworks */,
+				6C714ECB18A6A8D10023EF09 /* CFNetwork.framework in Frameworks */,
+				6C714EC918A6A8940023EF09 /* Accelerate.framework in Frameworks */,
+				6C714EC718A6A8870023EF09 /* MapKit.framework in Frameworks */,
+				6C714EC518A6A87E0023EF09 /* CoreLocation.framework in Frameworks */,
 				6C714EB018A695FA0023EF09 /* FacebookSDK.framework in Frameworks */,
 				6C714EB118A695FA0023EF09 /* Parse.framework in Frameworks */,
 				6C714E8218A6953B0023EF09 /* CoreGraphics.framework in Frameworks */,
@@ -112,6 +135,13 @@
 		6C714E7E18A6953A0023EF09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */,
+				6C714ECE18A6A90A0023EF09 /* Security.framework */,
+				6C714ECC18A6A8F80023EF09 /* MobileCoreServices.framework */,
+				6C714ECA18A6A8D10023EF09 /* CFNetwork.framework */,
+				6C714EC818A6A8940023EF09 /* Accelerate.framework */,
+				6C714EC618A6A8860023EF09 /* MapKit.framework */,
+				6C714EC418A6A87E0023EF09 /* CoreLocation.framework */,
 				6C714EAE18A695FA0023EF09 /* FacebookSDK.framework */,
 				6C714EAF18A695FA0023EF09 /* Parse.framework */,
 				6C714E7F18A6953A0023EF09 /* Foundation.framework */,
@@ -183,6 +213,7 @@
 		6C714EB418A696FC0023EF09 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6C714EC218A6A65D0023EF09 /* login-button-small.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -279,6 +310,7 @@
 				6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */,
 				6C714E9218A6953B0023EF09 /* Images.xcassets in Resources */,
 				6C714EBA18A69ACA0023EF09 /* LoginViewController.xib in Resources */,
+				6C714EC318A6A65D0023EF09 /* login-button-small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

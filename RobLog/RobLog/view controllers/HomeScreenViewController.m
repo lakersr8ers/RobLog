@@ -8,25 +8,23 @@
 
 #import "HomeScreenViewController.h"
 
-@interface HomeScreenViewController ()
-
-@end
-
 @implementation HomeScreenViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self checkLogin];
+}
+
+- (void)checkLogin
+{
+    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+        
+    }
+    else {
+        NSLog(@"Not logged in yet");
+        [self presentViewController:[[LoginViewController alloc] init] animated:YES completion:NULL];
+    }
 }
 
 - (void)didReceiveMemoryWarning
