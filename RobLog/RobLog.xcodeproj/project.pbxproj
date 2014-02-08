@@ -115,6 +115,9 @@
 		6C714E8518A6953B0023EF09 /* RobLog */ = {
 			isa = PBXGroup;
 			children = (
+				6C714EB218A696FC0023EF09 /* model */,
+				6C714EB318A696FC0023EF09 /* resources */,
+				6C714EB518A696FC0023EF09 /* view controllers */,
 				6C714E8E18A6953B0023EF09 /* AppDelegate.h */,
 				6C714E8F18A6953B0023EF09 /* AppDelegate.m */,
 				6C714E9118A6953B0023EF09 /* Images.xcassets */,
@@ -150,6 +153,35 @@
 				6C714EA118A6953B0023EF09 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C714EB218A696FC0023EF09 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6C714EB318A696FC0023EF09 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C714EB418A696FC0023EF09 /* images */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6C714EB418A696FC0023EF09 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6C714EB518A696FC0023EF09 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "view controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
