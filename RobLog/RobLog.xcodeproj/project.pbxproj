@@ -33,6 +33,7 @@
 		6C714ECD18A6A8F80023EF09 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECC18A6A8F80023EF09 /* MobileCoreServices.framework */; };
 		6C714ECF18A6A90A0023EF09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECE18A6A90A0023EF09 /* Security.framework */; };
 		6C714ED118A6A93F0023EF09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */; };
+		6C714ED418A6B5CB0023EF09 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714ED318A6B5CB0023EF09 /* UserInfoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		6C714ECC18A6A8F80023EF09 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6C714ECE18A6A90A0023EF09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6C714ED218A6B5CB0023EF09 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
+		6C714ED318A6B5CB0023EF09 /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 		6C714EB218A696FC0023EF09 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				6C714ED218A6B5CB0023EF09 /* UserInfoManager.h */,
+				6C714ED318A6B5CB0023EF09 /* UserInfoManager.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C714ED418A6B5CB0023EF09 /* UserInfoManager.m in Sources */,
 				6C714E9018A6953B0023EF09 /* AppDelegate.m in Sources */,
 				6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */,
 				6C714E8C18A6953B0023EF09 /* main.m in Sources */,

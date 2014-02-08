@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import "LoginViewController.h"
 
-@interface HomeScreenViewController : UIViewController
+
+@interface HomeScreenViewController : UITabBarController
+<UITabBarDelegate, UITabBarControllerDelegate>
 
 @end

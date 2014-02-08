@@ -7,6 +7,7 @@
 //
 
 #import "HomeScreenViewController.h"
+#import "UserInfoManager.h"
 
 @implementation HomeScreenViewController
 
@@ -19,12 +20,24 @@
 - (void)checkLogin
 {
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
-        
+        [self initFacebookData];
     }
     else {
         NSLog(@"Not logged in yet");
         [self presentViewController:[[LoginViewController alloc] init] animated:YES completion:NULL];
     }
+}
+
+- (void)initFacebookData
+{
+    [[UserInfoManager sharedManager] initFBData:^(bool error, NSString *errorMessage) {
+        if (!error) {
+            NSLog(@"User info added to ParseDB");
+        }
+        else {
+            NSLog(@"%@", errorMessage);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
