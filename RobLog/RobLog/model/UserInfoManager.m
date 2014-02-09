@@ -10,6 +10,8 @@
 
 @implementation UserInfoManager
 
+@synthesize checkInID;
+
 static int initialized = 0;
 static UserInfoManager *userInfoManager;
 
@@ -18,6 +20,7 @@ static UserInfoManager *userInfoManager;
     if (!initialized) {
         userInfoManager = [[UserInfoManager alloc] init];
         initialized = 1;
+        userInfoManager.checkInID = nil;
     }
     
     return userInfoManager;
@@ -71,6 +74,57 @@ static UserInfoManager *userInfoManager;
             completion(true, [NSString stringWithFormat:@"Some other error: %@", error]);
         }
     }];
+}
+
+- (void)checkInCheckOut:(void (^)(NSString *))completion
+{
+    NSLog(@"Check id: %@", checkInID);
+    if (checkInID == nil) {
+        NSLog(@"Check in");
+        completion([self checkIn]);
+    }
+    else {
+        NSLog(@"Check out");
+        completion([self checkout]);
+    }
+}
+
+- (NSString *)checkIn
+{
+    NSDate *date = [[NSDate alloc] init];
+    PFObject *object = [PFObject objectWithClassName:@"CheckInCheckOut"];
+    object[@"checkin"] = date;
+    object[@"user"] = [PFUser currentUser];
+    object[@"checkout"] = date;
+    [object save];
+    
+    checkInID = [object objectId];
+    NSLog(@"checkin id: %@", checkInID);
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MMM dd, hh:mm a"];
+    NSString *dateStr = [formatter stringFromDate:date];
+    
+    return dateStr;
+}
+
+- (NSString *)checkout
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"CheckInCheckOut"];
+    PFObject *object = [query getObjectWithId:checkInID];
+    
+    NSDate *date = [[NSDate alloc] init];
+    
+    object[@"checkout"] = date;
+    [object saveInBackground];
+    
+    checkInID = nil;
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MMM dd, hh:mm a"];
+    NSString *dateStr = [formatter stringFromDate:date];
+
+    return dateStr;
 }
 
 @end

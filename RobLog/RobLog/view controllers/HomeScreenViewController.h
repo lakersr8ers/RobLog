@@ -9,9 +9,27 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "LoginViewController.h"
+#import "StudyStreamViewController.h"
+#import "StatsViewController.h"
+#import "ProfileViewController.h"
 
+@class StudyStreamViewController;
+@class StatsViewController;
 
-@interface HomeScreenViewController : UITabBarController
-<UITabBarDelegate, UITabBarControllerDelegate>
+@interface HomeScreenViewController : UIViewController
+<UITabBarDelegate, UIAlertViewDelegate>
+{
+    IBOutlet UITabBar *homeTabBar;
+    IBOutlet UIView *mainView;
+    UIViewController *selectedController;
+    
+    NSArray *viewControllers;
+    NSArray *titles;
+}
+
+@property (nonatomic, strong) StudyStreamViewController *studyStreamVC;
+@property (nonatomic, strong) StatsViewController *statsVC;
+@property (nonatomic, strong) ProfileViewController *profileVC;
+
 
 @end

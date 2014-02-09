@@ -34,6 +34,24 @@
 		6C714ECF18A6A90A0023EF09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ECE18A6A90A0023EF09 /* Security.framework */; };
 		6C714ED118A6A93F0023EF09 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */; };
 		6C714ED418A6B5CB0023EF09 /* UserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714ED318A6B5CB0023EF09 /* UserInfoManager.m */; };
+		6C714ED818A6C23F0023EF09 /* StudyStreamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C714ED618A6C23F0023EF09 /* StudyStreamViewController.m */; };
+		6C714ED918A6C23F0023EF09 /* StudyStreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C714ED718A6C23F0023EF09 /* StudyStreamViewController.xib */; };
+		6C821C6718A6DFF0002D33EE /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C821C6518A6DFF0002D33EE /* StatsViewController.m */; };
+		6C821C6818A6DFF0002D33EE /* StatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C6618A6DFF0002D33EE /* StatsViewController.xib */; };
+		6C821C6C18A6E049002D33EE /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C821C6A18A6E049002D33EE /* ProfileViewController.m */; };
+		6C821C6D18A6E049002D33EE /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C6B18A6E049002D33EE /* ProfileViewController.xib */; };
+		6C821C7018A6E5BE002D33EE /* loginBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C6E18A6E5BE002D33EE /* loginBackground.jpg */; };
+		6C821C7118A6E5BE002D33EE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C6F18A6E5BE002D33EE /* logo.png */; };
+		6C821C7318A6E771002D33EE /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7218A6E771002D33EE /* UserProfileTableViewCell.xib */; };
+		6C821C7618A6FDF9002D33EE /* profile_after.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7418A6FDF9002D33EE /* profile_after.png */; };
+		6C821C7718A6FDF9002D33EE /* profile_before.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7518A6FDF9002D33EE /* profile_before.png */; };
+		6C821C7C18A6FE7E002D33EE /* stats_after.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7818A6FE7E002D33EE /* stats_after.png */; };
+		6C821C7D18A6FE7E002D33EE /* stats_before.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7918A6FE7E002D33EE /* stats_before.png */; };
+		6C821C7E18A6FE7E002D33EE /* stream_after.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7A18A6FE7E002D33EE /* stream_after.png */; };
+		6C821C7F18A6FE7E002D33EE /* stream_before.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C7B18A6FE7E002D33EE /* stream_before.png */; };
+		6C821C8118A7031F002D33EE /* StatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */; };
+		6C821C8518A7131D002D33EE /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8318A7131D002D33EE /* clock.png */; };
+		6C821C8618A7131D002D33EE /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8418A7131D002D33EE /* status.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +99,27 @@
 		6C714ED018A6A93F0023EF09 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6C714ED218A6B5CB0023EF09 /* UserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoManager.h; sourceTree = "<group>"; };
 		6C714ED318A6B5CB0023EF09 /* UserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoManager.m; sourceTree = "<group>"; };
+		6C714ED518A6C23F0023EF09 /* StudyStreamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyStreamViewController.h; sourceTree = "<group>"; };
+		6C714ED618A6C23F0023EF09 /* StudyStreamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyStreamViewController.m; sourceTree = "<group>"; };
+		6C714ED718A6C23F0023EF09 /* StudyStreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyStreamViewController.xib; sourceTree = "<group>"; };
+		6C821C6418A6DFF0002D33EE /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		6C821C6518A6DFF0002D33EE /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		6C821C6618A6DFF0002D33EE /* StatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatsViewController.xib; sourceTree = "<group>"; };
+		6C821C6918A6E049002D33EE /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		6C821C6A18A6E049002D33EE /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		6C821C6B18A6E049002D33EE /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		6C821C6E18A6E5BE002D33EE /* loginBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginBackground.jpg; sourceTree = "<group>"; };
+		6C821C6F18A6E5BE002D33EE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6C821C7218A6E771002D33EE /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
+		6C821C7418A6FDF9002D33EE /* profile_after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_after.png; sourceTree = "<group>"; };
+		6C821C7518A6FDF9002D33EE /* profile_before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_before.png; sourceTree = "<group>"; };
+		6C821C7818A6FE7E002D33EE /* stats_after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats_after.png; sourceTree = "<group>"; };
+		6C821C7918A6FE7E002D33EE /* stats_before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats_before.png; sourceTree = "<group>"; };
+		6C821C7A18A6FE7E002D33EE /* stream_after.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stream_after.png; sourceTree = "<group>"; };
+		6C821C7B18A6FE7E002D33EE /* stream_before.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stream_before.png; sourceTree = "<group>"; };
+		6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatsTableViewCell.xib; sourceTree = "<group>"; };
+		6C821C8318A7131D002D33EE /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		6C821C8418A7131D002D33EE /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +257,16 @@
 		6C714EB418A696FC0023EF09 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6C821C8318A7131D002D33EE /* clock.png */,
+				6C821C8418A7131D002D33EE /* status.png */,
+				6C821C7818A6FE7E002D33EE /* stats_after.png */,
+				6C821C7918A6FE7E002D33EE /* stats_before.png */,
+				6C821C7A18A6FE7E002D33EE /* stream_after.png */,
+				6C821C7B18A6FE7E002D33EE /* stream_before.png */,
+				6C821C7418A6FDF9002D33EE /* profile_after.png */,
+				6C821C7518A6FDF9002D33EE /* profile_before.png */,
+				6C821C6E18A6E5BE002D33EE /* loginBackground.jpg */,
+				6C821C6F18A6E5BE002D33EE /* logo.png */,
 				6C714EC218A6A65D0023EF09 /* login-button-small.png */,
 			);
 			path = images;
@@ -232,6 +281,17 @@
 				6C714EBB18A69ADF0023EF09 /* HomeScreenViewController.h */,
 				6C714EBC18A69ADF0023EF09 /* HomeScreenViewController.m */,
 				6C714EBD18A69ADF0023EF09 /* HomeScreenViewController.xib */,
+				6C714ED518A6C23F0023EF09 /* StudyStreamViewController.h */,
+				6C714ED618A6C23F0023EF09 /* StudyStreamViewController.m */,
+				6C714ED718A6C23F0023EF09 /* StudyStreamViewController.xib */,
+				6C821C6418A6DFF0002D33EE /* StatsViewController.h */,
+				6C821C6518A6DFF0002D33EE /* StatsViewController.m */,
+				6C821C6618A6DFF0002D33EE /* StatsViewController.xib */,
+				6C821C6918A6E049002D33EE /* ProfileViewController.h */,
+				6C821C6A18A6E049002D33EE /* ProfileViewController.m */,
+				6C821C6B18A6E049002D33EE /* ProfileViewController.xib */,
+				6C821C7218A6E771002D33EE /* UserProfileTableViewCell.xib */,
+				6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -311,9 +371,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C821C7E18A6FE7E002D33EE /* stream_after.png in Resources */,
 				6C714E8A18A6953B0023EF09 /* InfoPlist.strings in Resources */,
+				6C821C6818A6DFF0002D33EE /* StatsViewController.xib in Resources */,
+				6C821C7C18A6FE7E002D33EE /* stats_after.png in Resources */,
+				6C821C7718A6FDF9002D33EE /* profile_before.png in Resources */,
+				6C821C6D18A6E049002D33EE /* ProfileViewController.xib in Resources */,
 				6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */,
+				6C821C7D18A6FE7E002D33EE /* stats_before.png in Resources */,
+				6C714ED918A6C23F0023EF09 /* StudyStreamViewController.xib in Resources */,
+				6C821C8618A7131D002D33EE /* status.png in Resources */,
+				6C821C8118A7031F002D33EE /* StatsTableViewCell.xib in Resources */,
+				6C821C8518A7131D002D33EE /* clock.png in Resources */,
 				6C714E9218A6953B0023EF09 /* Images.xcassets in Resources */,
+				6C821C7F18A6FE7E002D33EE /* stream_before.png in Resources */,
+				6C821C7618A6FDF9002D33EE /* profile_after.png in Resources */,
+				6C821C7118A6E5BE002D33EE /* logo.png in Resources */,
+				6C821C7318A6E771002D33EE /* UserProfileTableViewCell.xib in Resources */,
+				6C821C7018A6E5BE002D33EE /* loginBackground.jpg in Resources */,
 				6C714EBA18A69ACA0023EF09 /* LoginViewController.xib in Resources */,
 				6C714EC318A6A65D0023EF09 /* login-button-small.png in Resources */,
 			);
@@ -336,6 +411,9 @@
 			files = (
 				6C714ED418A6B5CB0023EF09 /* UserInfoManager.m in Sources */,
 				6C714E9018A6953B0023EF09 /* AppDelegate.m in Sources */,
+				6C821C6C18A6E049002D33EE /* ProfileViewController.m in Sources */,
+				6C821C6718A6DFF0002D33EE /* StatsViewController.m in Sources */,
+				6C714ED818A6C23F0023EF09 /* StudyStreamViewController.m in Sources */,
 				6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */,
 				6C714E8C18A6953B0023EF09 /* main.m in Sources */,
 				6C714EB918A69ACA0023EF09 /* LoginViewController.m in Sources */,
@@ -551,6 +629,7 @@
 				6C714EAA18A6953B0023EF09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C714EAB18A6953B0023EF09 /* Build configuration list for PBXNativeTarget "RobLogTests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +638,7 @@
 				6C714EAD18A6953B0023EF09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

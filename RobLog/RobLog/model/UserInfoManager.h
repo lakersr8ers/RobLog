@@ -11,11 +11,14 @@
 
 @interface UserInfoManager : NSObject
 {
-    
+    NSString *checkInId;
 }
+
+@property (nonatomic, strong) NSString *checkInID;
 
 + (UserInfoManager *)sharedManager;
 
 - (void)initFBData:(void (^)(bool error, NSString *errorMessage))completion;
+- (void)checkInCheckOut:(void (^)(NSString *dateStr))completion;
 
 @end
