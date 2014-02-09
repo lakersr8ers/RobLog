@@ -52,6 +52,10 @@
 		6C821C8118A7031F002D33EE /* StatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */; };
 		6C821C8518A7131D002D33EE /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8318A7131D002D33EE /* clock.png */; };
 		6C821C8618A7131D002D33EE /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8418A7131D002D33EE /* status.png */; };
+		6C821C8A18A72F62002D33EE /* AddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C821C8818A72F62002D33EE /* AddPostViewController.m */; };
+		6C821C8B18A72F62002D33EE /* AddPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8918A72F62002D33EE /* AddPostViewController.xib */; };
+		6C821C8D18A74119002D33EE /* StudyStreamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8C18A74119002D33EE /* StudyStreamTableViewCell.xib */; };
+		6C821C8F18A74824002D33EE /* verticalline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C821C8E18A74823002D33EE /* verticalline.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,11 @@
 		6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatsTableViewCell.xib; sourceTree = "<group>"; };
 		6C821C8318A7131D002D33EE /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		6C821C8418A7131D002D33EE /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		6C821C8718A72F62002D33EE /* AddPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostViewController.h; sourceTree = "<group>"; };
+		6C821C8818A72F62002D33EE /* AddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostViewController.m; sourceTree = "<group>"; };
+		6C821C8918A72F62002D33EE /* AddPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddPostViewController.xib; sourceTree = "<group>"; };
+		6C821C8C18A74119002D33EE /* StudyStreamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyStreamTableViewCell.xib; sourceTree = "<group>"; };
+		6C821C8E18A74823002D33EE /* verticalline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verticalline.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +266,7 @@
 		6C714EB418A696FC0023EF09 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6C821C8E18A74823002D33EE /* verticalline.png */,
 				6C821C8318A7131D002D33EE /* clock.png */,
 				6C821C8418A7131D002D33EE /* status.png */,
 				6C821C7818A6FE7E002D33EE /* stats_after.png */,
@@ -292,6 +302,10 @@
 				6C821C6B18A6E049002D33EE /* ProfileViewController.xib */,
 				6C821C7218A6E771002D33EE /* UserProfileTableViewCell.xib */,
 				6C821C8018A7031F002D33EE /* StatsTableViewCell.xib */,
+				6C821C8718A72F62002D33EE /* AddPostViewController.h */,
+				6C821C8818A72F62002D33EE /* AddPostViewController.m */,
+				6C821C8918A72F62002D33EE /* AddPostViewController.xib */,
+				6C821C8C18A74119002D33EE /* StudyStreamTableViewCell.xib */,
 			);
 			path = "view controllers";
 			sourceTree = "<group>";
@@ -376,13 +390,16 @@
 				6C821C6818A6DFF0002D33EE /* StatsViewController.xib in Resources */,
 				6C821C7C18A6FE7E002D33EE /* stats_after.png in Resources */,
 				6C821C7718A6FDF9002D33EE /* profile_before.png in Resources */,
+				6C821C8D18A74119002D33EE /* StudyStreamTableViewCell.xib in Resources */,
 				6C821C6D18A6E049002D33EE /* ProfileViewController.xib in Resources */,
 				6C714EBF18A69ADF0023EF09 /* HomeScreenViewController.xib in Resources */,
 				6C821C7D18A6FE7E002D33EE /* stats_before.png in Resources */,
+				6C821C8F18A74824002D33EE /* verticalline.png in Resources */,
 				6C714ED918A6C23F0023EF09 /* StudyStreamViewController.xib in Resources */,
 				6C821C8618A7131D002D33EE /* status.png in Resources */,
 				6C821C8118A7031F002D33EE /* StatsTableViewCell.xib in Resources */,
 				6C821C8518A7131D002D33EE /* clock.png in Resources */,
+				6C821C8B18A72F62002D33EE /* AddPostViewController.xib in Resources */,
 				6C714E9218A6953B0023EF09 /* Images.xcassets in Resources */,
 				6C821C7F18A6FE7E002D33EE /* stream_before.png in Resources */,
 				6C821C7618A6FDF9002D33EE /* profile_after.png in Resources */,
@@ -414,6 +431,7 @@
 				6C821C6C18A6E049002D33EE /* ProfileViewController.m in Sources */,
 				6C821C6718A6DFF0002D33EE /* StatsViewController.m in Sources */,
 				6C714ED818A6C23F0023EF09 /* StudyStreamViewController.m in Sources */,
+				6C821C8A18A72F62002D33EE /* AddPostViewController.m in Sources */,
 				6C714EBE18A69ADF0023EF09 /* HomeScreenViewController.m in Sources */,
 				6C714E8C18A6953B0023EF09 /* main.m in Sources */,
 				6C714EB918A69ACA0023EF09 /* LoginViewController.m in Sources */,

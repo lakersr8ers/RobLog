@@ -12,6 +12,7 @@
 #import "StudyStreamViewController.h"
 #import "StatsViewController.h"
 #import "ProfileViewController.h"
+#import "AddPostViewController.h"
 
 @class StudyStreamViewController;
 @class StatsViewController;

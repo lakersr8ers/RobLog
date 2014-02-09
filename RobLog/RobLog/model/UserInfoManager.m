@@ -127,4 +127,35 @@ static UserInfoManager *userInfoManager;
     return dateStr;
 }
 
+- (void)addPost:(NSString *)text
+{
+    PFObject *object = [PFObject objectWithClassName:@"Posts"];
+    object[@"user"] = [PFUser currentUser];
+    object[@"name"] = [PFUser currentUser][@"profile"][@"name"];
+    object[@"text"] = text;
+    
+    [object saveInBackground];
+}
+
+- (void)retrievePosts:(void (^)(bool, NSMutableArray *))completion
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Posts"];
+    [query orderByDescending:@"createAt"];
+    //[query whereKey:@"user" notEqualTo:[PFUser currentUser]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Retrieved %d events for current user", objects.count);
+            NSMutableArray *retObjects = [[NSMutableArray alloc] init];
+            for (PFObject *object in objects) {
+                [retObjects addObject:object];
+            }
+            completion(true, retObjects);
+        }
+        else {
+            completion(false, nil);
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+}
+
 @end

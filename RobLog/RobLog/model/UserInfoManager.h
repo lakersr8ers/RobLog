@@ -20,5 +20,7 @@
 
 - (void)initFBData:(void (^)(bool error, NSString *errorMessage))completion;
 - (void)checkInCheckOut:(void (^)(NSString *dateStr))completion;
+- (void)addPost:(NSString *)text;
+- (void)retrievePosts:(void (^)(bool success, NSMutableArray *objects))completion;
 
 @end

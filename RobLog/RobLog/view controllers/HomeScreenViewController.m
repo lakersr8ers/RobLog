@@ -114,7 +114,8 @@
 
 - (void)statusButtonPressed:(id)sender
 {
-    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[[AddPostViewController alloc] init]];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)checkInButtonPressed:(id)sender

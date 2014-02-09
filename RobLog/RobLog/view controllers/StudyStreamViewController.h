@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface StudyStreamViewController : UITableViewController
-<UITableViewDataSource, UITableViewDelegate>
+<UITableViewDataSource, UITableViewDelegate, NSURLConnectionDelegate>
 {
-    
+    NSMutableArray *userImages;
+    NSMutableArray *postObjects;
 }
 @end
